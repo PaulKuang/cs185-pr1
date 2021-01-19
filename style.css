@@ -24,3 +24,9 @@ li.nav a {
     padding: 14px 15px;
     text-decoration: none;
 }
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
