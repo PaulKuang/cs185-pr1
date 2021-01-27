@@ -10,39 +10,61 @@
 <body>
 <nav>
     <ul class="nav">
-        <li class="nav"><a class="active" href="index.html">Text</a></li>
-        <li class="nav"><a href="image.html">Image</a></li>
+        <li class="nav"><a href="index.html">Text</a></li>
+        <li class="nav"><a class="active" href="image.html">Image</a></li>
         <li class="nav"><a href="video.html">Video</a></li>
         <li class="nav"><a href="table.html">Table</a></li>
-        </ul>
+        <li class="nav"><a href="email.html">Email</a></li>
+    </ul>
 </nav>
 
 <br>
 
-<div class="row">
-    <div class="column">
-        <img src="images/1.jpg" alt="ins" style="width:100%"/>
-    </div>
-    <div class="column">
-        <img src="images/2.jpg" alt="ins" style="width:100%"/>
-    </div>
-    <div class="column">
-        <img src="images/3.jpg" alt="ins" style="width:100%"/>
-    </div>
+<div class="overlay" id="imagebox">
+    <img class="enlargeImg" id="overlay_img">
 </div>
 
 <div class="row">
     <div class="column">
-        <img src="images/4.jpg" alt="ins" style="width:100%"/>
+        <img src="images/1.jpg" onclick="showImg(this)"/>
+        <img src="images/2.jpg" onclick="showImg(this)"/>
+        <img src="images/3.jpg" onclick="showImg(this)"/>
+        <img src="images/1.jpg" onclick="showImg(this)"/>
+        <img src="images/2.jpg" onclick="showImg(this)"/>
+        <img src="images/3.jpg" onclick="showImg(this)"/>
     </div>
     <div class="column">
-        <img src="images/5.jpg" alt="ins" style="width:100%"/>
+        <img src="images/4.jpg" onclick="showImg(this)"/>
+        <img src="images/5.jpg" onclick="showImg(this)"/>
+        <img src="images/6.jpg" onclick="showImg(this)"/>
+        <img src="images/4.jpg" onclick="showImg(this)"/>
+        <img src="images/5.jpg" onclick="showImg(this)"/>
+        <img src="images/6.jpg" onclick="showImg(this)"/>
     </div>
     <div class="column">
-        <img src="images/6.jpg" alt="ins" style="width:100%"/>
+        <img src="images/1.jpg" onclick="showImg(this)"/>
+        <img src="images/2.jpg" onclick="showImg(this)"/>
+        <img src="images/3.jpg" onclick="showImg(this)"/>
+        <img src="images/1.jpg" onclick="showImg(this)"/>
+        <img src="images/2.jpg" onclick="showImg(this)"/>
+        <img src="images/3.jpg" onclick="showImg(this)"/>
+    </div>
+    <div class="column">
+        <img src="images/4.jpg" onclick="showImg(this)"/>
+        <img src="images/5.jpg" onclick="showImg(this)"/>
+        <img src="images/6.jpg" onclick="showImg(this)"/>
+        <img src="images/4.jpg" onclick="showImg(this)"/>
+        <img src="images/5.jpg" onclick="showImg(this)"/>
+        <img src="images/6.jpg" onclick="showImg(this)"/>
     </div>
 </div>
 
 </body>
 
+<button onclick="gotoTopFunction()" id="topButton" title="Go to top">Back to Top</button>
+
+<script src="scripts.js"></script>
+<script>
+    window.onscroll = function() {scrollCheck()};
+</script>
 </html>
