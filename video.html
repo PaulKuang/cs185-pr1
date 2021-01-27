@@ -10,26 +10,35 @@
 <body>
 <nav>
     <ul class="nav">
-        <li class="nav"><a class="active" href="index.html">Text</a></li>
+        <li class="nav"><a href="index.html">Text</a></li>
         <li class="nav"><a href="image.html">Image</a></li>
-        <li class="nav"><a href="video.html">Video</a></li>
+        <li class="nav"><a class="active" href="video.html">Video</a></li>
         <li class="nav"><a href="table.html">Table</a></li>
-        </ul>
+        <li class="nav"><a href="email.html">Email</a></li>
+    </ul>
 </nav>
 
 <br>
-
+<div class="overlay" id="imagebox">
+    <img class="enlargeImg" id="overlay_img">
+</div>
+<div class="overlay" id="videobox">
+    <video class="enlargeVideo" id="overlay_video" controls autoplay>
+</div>
 <div class="row">
     <div class="column">
-        <iframe class="video" src="videos/v1.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <video class="video" src="videos/v1.mp4" style="width:100% ;cursor: pointer;" onclick="showVideo(this)"></video>
     </div>
     <div class="column">
-        <iframe class="video" src="videos/v2.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <video class="video" src="videos/v3.mp4" style="width:100% ;cursor: pointer;" onclick="showVideo(this)"></video>
     </div>
     <div class="column">
-        <iframe class="video" src="videos/v3.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <video class="video" src="videos/v1.mp4" style="width:100% ;cursor: pointer;" onclick="showVideo(this)"></video>
+    </div>
+    <div class="column">
+        <video class="video" src="videos/v3.mp4" style="width:100% ;cursor: pointer;" onclick="showVideo(this)"></video>
     </div>
 </div>
 </body>
-
+<script src="scripts.js"></script>
 </html>

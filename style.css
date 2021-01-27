@@ -1,4 +1,4 @@
-/* Navigation Bar Styling */
+
 nav{
     position: sticky;
     top: 0;
@@ -29,4 +29,14 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
+
+li.nav a:hover:not(.active) {
+    background-color: rgb(0, 0, 0);
+}
+    
+.active {
+    background-color: #000000;
+}
+
+
 
