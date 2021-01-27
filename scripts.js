@@ -1,6 +1,7 @@
 var imgBox = document.getElementById("imagebox");
 var overlayImg = document.getElementById("overlay_img");
 
+
 imgBox.onclick = function (e) {
   imgBox.style.display = "none";
 };
